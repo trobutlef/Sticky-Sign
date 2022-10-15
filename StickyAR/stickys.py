@@ -95,21 +95,21 @@ def genCalTransformMatrix(image, color, lowTolerance, highTolerance, width, heig
     return transform_matrix
 
 def lookForColor(image, transform_matrix, color, colorName, lowTolerance, highTolerance, grid_width, grid_height):
-    color_mask = maskByColor(image, color, lowTolerance, highTolerance)
-    contour_list = generateFilteredContourList(color_mask, 100) #the 100 is the general size of the sticky note, but this number is largely emperical
-    image_redrawn = image.copy()
+	color_mask = maskByColor(image, color, lowTolerance, highTolerance)
+	contour_list = generateFilteredContourList(color_mask, 100) #the 100 is the general size of the sticky note, but this number is largely emperical
+	image_redrawn = image.copy()
 
-    bounding_box_coords = []
-    for contour in contour_list:
-      x, y, w, h = cv.boundingRect(contour)
-      bounding_box_coords.append([x, y, w, h, colorName])
+	bounding_box_coords = []
+	for contour in contour_list:
+		x, y, w, h = cv.boundingRect(contour)
+		bounding_box_coords.append([x, y, w, h, colorName])
 
-      b, g, r = tuple(color)
-      b = int(b)
-      g = int(g)
-      r = int(r)
-      cv.rectangle(image_redrawn, (x,y), (x + w, y + h), (b, g, r), 2)
-    return bounding_box_coords
+		b, g, r = tuple(color)
+		b = int(b)
+		g = int(g)
+		r = int(r)
+		cv.rectangle(image_redrawn, (x,y), (x + w, y + h), (b, g, r), 2)
+	return bounding_box_coords
 				
 def lookForGreen(image, transform_matrix, grid_width, grid_height):
     return lookForColor(image, transform_matrix, green, "green", 20, 25, grid_width, grid_height)
@@ -213,7 +213,7 @@ def updateSticky():
 
 print(updateSticky())
 
-cal_image = cv.imread("training/redCalibration2.png")
+""" cal_image = cv.imread("training/redCalibration2.jpg")
 cal_mask = maskByColor(cal_image, red, 90, 80)
 
 cv.imshow("calib", cal_mask)
@@ -224,7 +224,7 @@ grid_height = 300
 transform_matrix = genCalTransformMatrix(cal_image, red, 90, 80, grid_width, grid_height)
 
 #generate transformed image
-image = cv.imread("training/sticky2.png")
+image = cv.imread("training/sticky2.jpg")
 image_transformed = cv.warpPerspective(image, transform_matrix, (grid_width, grid_height))
 
 
@@ -248,4 +248,4 @@ cv.imshow("blue", blue_painted)
 
 plt.subplot(121),plt.imshow(image),plt.title('image')
 plt.subplot(122),plt.imshow(image_transformed),plt.title('image_transformed')
-plt.show() 
+plt.show() """
