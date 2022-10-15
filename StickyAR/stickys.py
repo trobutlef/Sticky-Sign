@@ -192,7 +192,7 @@ def updateSticky():
 	transform_matrix = genCalTransformMatrix(calib_image, red, 90, 80, grid_width, grid_height)
 
 	state_image_transformed = cv.warpPerspective(state_image, transform_matrix, (grid_width, grid_height))
-	cv.imwrite("state_image_transformed.png", state_image_transformed)
+	cv.imwrite("../pictures/state_image_transformed.png", state_image_transformed)
 
 
 	bounding_box_coords = lookForGreen(state_image, transform_matrix, grid_width, grid_height)
@@ -215,40 +215,3 @@ def updateSticky():
 	return bounding_box_coords
 
 print(updateSticky())
-
-""" cal_image = cv.imread("training/redCalibration2.jpg")
-cal_mask = maskByColor(cal_image, red, 90, 80)
-
-cv.imshow("calib", cal_mask)
-cv.waitKey()
-
-grid_width = 400
-grid_height = 300
-transform_matrix = genCalTransformMatrix(cal_image, red, 90, 80, grid_width, grid_height)
-
-#generate transformed image
-image = cv.imread("training/sticky2.jpg")
-image_transformed = cv.warpPerspective(image, transform_matrix, (grid_width, grid_height))
-
-
-bounding_box_coords = []
-green_coords, green_painted = lookForGreen(image_transformed, transform_matrix, grid_width, grid_height)
-orange_coords, orange_painted = lookForOrange(image_transformed, transform_matrix, grid_width, grid_height)
-pink_coords, pink_painted = lookForPink(image_transformed, transform_matrix, grid_width, grid_height)
-blue_coords, blue_painted = lookForBlue(image_transformed, transform_matrix, grid_width, grid_height)
-
-bounding_box_coords.append(green_coords)
-bounding_box_coords.append(orange_coords)
-bounding_box_coords.append(pink_coords)
-bounding_box_coords.append(blue_coords)
-print(bounding_box_coords)
-
-
-cv.imshow("green", green_painted)
-cv.imshow("orange", orange_painted)
-cv.imshow("pink", pink_painted)
-cv.imshow("blue", blue_painted)
-
-plt.subplot(121),plt.imshow(image),plt.title('image')
-plt.subplot(122),plt.imshow(image_transformed),plt.title('image_transformed')
-plt.show() """
