@@ -4,7 +4,7 @@ Proprietary content of StickyAR, 2019
 Brought to you by Luke Igel, Fischer Moseley, Tim Gutterman, and Zach Rolfness
 """
 import pygame as pg
-from settings import *
+from Settings import *
 vec = pg.math.Vector2
 
 class Player(pg.sprite.Sprite):
