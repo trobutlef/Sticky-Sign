@@ -1,6 +1,6 @@
 from StickyJump import *
-from settings import *
-from sprites import *
+from Settings import *
+from Sprites import *
 
 def Launch(cv_data=None, debug_mode=False):
     print("launching game")
