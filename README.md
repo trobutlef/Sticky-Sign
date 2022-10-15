@@ -1,11 +1,5 @@
 ![StickyAR](https://github.com/FischerMoseley/HackMIT_StickyNoteAR/blob/master/assets/gamelogos/Logo.png)
 
-## Demo!
-![Recorded Demo](https://github.com/FischerMoseley/HackMIT_StickyNoteAR/blob/master/assets/gameplay.gif)
-
-## Awarded Best in Entertainment Category
-![Award Ceremony](https://github.com/FischerMoseley/HackMIT_StickyNoteAR/blob/master/assets/award.png)
-
 ## Inspiration
 Virtually every classroom has a projector, whiteboard, and sticky notes. With OpenCV and Python being more accessible than ever, we wanted to create an augmented reality entertainment platform that any enthusiast could learn from and bring to their own place of learning. StickyAR is just that, with a super simple interface that can anyone can use to produce any tile-based Numpy game. Our first offering is StickyJump , a 2D platformer whose layout can be changed on the fly by placement of sticky notes. We want to demystify computer science in the classroom, and letting students come face to face with what's possible is a task we were happy to take on.
 
