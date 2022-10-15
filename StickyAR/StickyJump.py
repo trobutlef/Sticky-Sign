@@ -6,10 +6,10 @@ Brought to you by Luke Igel, Fischer Moseley, Tim Gutterman, and Zach Rolfness
 import pygame as pg
 import time
 import random
-from settings import *
-from stickys import updateSticky, clearSticky, calibrate, uncalibrate
+from Settings import *
+from StickySign import updateSticky, clearSticky, calibrate, uncalibrate
 
-from sprites import *
+from Sprites import *
 from time import sleep
 
 # Default data seeds a guaranteed game world in absence of CV data

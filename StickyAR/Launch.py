@@ -2,7 +2,7 @@ from StickyJump import *
 from settings import *
 from sprites import *
 
-def launch_game(cv_data=None, debug_mode=False):
+def Launch(cv_data=None, debug_mode=False):
     print("launching game")
     g = StickyJump(cv_data, debug_mode)
     g.show_start_screen()
@@ -11,4 +11,4 @@ def launch_game(cv_data=None, debug_mode=False):
         g.show_go_screen()
 
 if __name__ == "__main__":
-    launch_game()
+    Launch()

@@ -2,7 +2,7 @@ import pygame as pg
 import thorpy
 from StickyJump import *
 from Learn import *
-from settings import *
+from Settings import *
 
 def init_game():
     currentState = None
@@ -36,12 +36,12 @@ if __name__ == "__main__":
         print("calibrating")
 
     logo = thorpy.Image.make(thorpy.load_image("../pictures/Logo.png"))
-    sticky_jump_image = "../pictures/StickyJump.png"
-    sticky_jump_image_hover = "../pictures/StickyJamHover.png"
-    sticky_jam_image = "../pictures/StickyJam.png"
-    reset_image = "../pictures/StickyReset.png"
-    quit_image = "../pictures/Credits.png"
-    quit_image_hover = "../pictures/CreditsHover.png"
+    sticky_jump_image = "../pictures/Jump.png"
+    sticky_jump_image_hover = "../pictures/Jump.png"
+    sticky_jam_image = "../pictures/Learn.png"
+    reset_image = "../pictures/Reset.png"
+    quit_image = "../pictures/Rules.png"
+    quit_image_hover = "../pictures/Rules.png"
     e_play = thorpy.make_image_button(sticky_jump_image,sticky_jump_image_hover,sticky_jump_image_hover)
     e_play.user_func = init_game
     e_play_2 = thorpy.make_image_button(sticky_jam_image,sticky_jam_image,sticky_jam_image)
