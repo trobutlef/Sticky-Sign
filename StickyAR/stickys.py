@@ -178,7 +178,7 @@ def reSticky():
 
 def updateSticky():
     if(not os.path.exists(state_image_path)):
-      camera = cv.VideoCapture(1)
+      camera = cv.VideoCapture(0)
       return_value, state_image = camera.read()
       camera.release()
       cv.imwrite(state_image_path, state_image)
