@@ -51,7 +51,7 @@ def init_game():
     print("attempt at retrieving currentState")
     print(currentState)
     print("launching game")
-    g = StickyJump(currentState)
+    g = StickyJump(currentState, True)
     g.show_start_screen()
     while g.running:
         g.new()

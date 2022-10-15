@@ -213,7 +213,9 @@ def updateSticky():
 
 print(updateSticky())
 
-""" cal_image = cv.imread("training/redCalibration2.jpg")
+#other code ... 
+'''
+cal_image = cv.imread("training/redCalibration2.jpg")
 cal_mask = maskByColor(cal_image, red, 90, 80)
 
 cv.imshow("calib", cal_mask)
@@ -248,4 +250,4 @@ cv.imshow("blue", blue_painted)
 
 plt.subplot(121),plt.imshow(image),plt.title('image')
 plt.subplot(122),plt.imshow(image_transformed),plt.title('image_transformed')
-plt.show() """
+plt.show() '''
