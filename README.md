@@ -19,8 +19,5 @@ StickySign was created with the intention of making American Sign Language more 
 We have a vision of partnering with Post-It Note to donate supplies (sticky notes and devices) to communities that are under-resourced. This strategic partnership will not only help our application gain traction but also make it visible to those who may not have been able to learn American Sign Language. Further support and application visibility can come from American Sign Language speaking influencers like Nyle DiMarco and Marlee Matlin using their platform to raise awareness for StickySign.
 # Thank You
 We are grateful to our generous mentors, the StickAR team (Zach Rolfness, Tim Gutterman, Lucas Igel, Fischer Moseley) for their kindness and novel idea, HackHarvard for organizing this incredible hackathon, inspiring peers, and teammates. These past 36 hours have been transformative.
-* Tell us how your experience with MLH’s sponsor technology went.
-Give us some feedback about any of the MLH sponsored technology you interacted with at this hackathon. Make sure you mention what tech you're reviewing (e.g. Twilio, GitHub, DeSo etc.).
-GitHub allowed us to collaborate on our code with the comfort of our individual laptops. Its open-source capabilities enabled us to expand the StickyAR code. The version-control feature let our team go back to previous edits and debug when necessary.
 
 Made by Chirag Malhotra, Tony Astuhuaman, Jaiden Price, and Melvin He for HackHarvard 2022.
