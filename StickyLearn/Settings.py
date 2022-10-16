@@ -1,8 +1,3 @@
-"""
-Game options/settings for StickyJump platformer game
-Proprietary content of StickyAR, 2019
-Brought to you by Luke Igel, Fischer Moseley, Tim Gutterman, and Zach Rolfness
-"""
 
 WIDTH = 1024 
 HEIGHT = 768

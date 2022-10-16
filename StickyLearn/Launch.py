@@ -3,7 +3,6 @@ from Settings import *
 from Sprites import *
 
 def Launch(cv_data=None, debug_mode=False):
-    print("launching game")
     g = StickyJump(cv_data, debug_mode)
     g.show_start_screen()
     while g.running:
