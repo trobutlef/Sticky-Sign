@@ -1,4 +1,4 @@
-![StickyAR](https://github.com/trobutlef/hackharvard-project/pictures/StickyLogo.png)
+![StickyAR](https://github.com/trobutlef/hackharvard-project/blob/main/pictures/StickyLogo.png)
 # Inspiration + Impact
 This project was inspired by a team member’s sibling who underwent cancer treatment, which limited his ability to communicate. American Sign Language (ASL) enabled the family to connect despite extenuating circumstances. Sign language has the power of bringing together hearing, hard-of-hearing, and deaf individuals. The language barrier between ASL-speakers and non-ASL speakers can lead to misdiagnosis in a medical setting, improper incarceration, lack of attention during an emergency situation, and inability to make connections with others. With just the power of sticky notes and a device, learning possibilities are endless.
 # Business Validation
