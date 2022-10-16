@@ -5,8 +5,10 @@ import subprocess
 class Learn:
     def __init__(self):
         screen = pg.display.set_mode((WIDTH, HEIGHT))
-        pg.display.set_caption('Practice Mode')
+        pg.display.set_caption('Flashcard Mode') 
         screen.fill(LIGHTPINK)
+        signletter = pg.image.load('../assets/signletters/A.png')
+        screen.blit(pg.transform.scale(signletter, (500, 500)), [255, 150])
         pg.display.update()
         running = True
         while running:

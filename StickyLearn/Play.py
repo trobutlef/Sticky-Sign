@@ -29,7 +29,6 @@ class MyPrompt(Cmd):
 
     def do_u(self, inp):
         print("Calibrating screen...")
-        calibrate()
         print("Screen Calibrated")
     
     def do_s(self, inp):

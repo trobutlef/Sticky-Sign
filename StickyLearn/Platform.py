@@ -2,6 +2,7 @@ import pygame as pg
 import thorpy
 from StickyJump import *
 from Learn import *
+from Rules import *
 from Settings import *
 
 def init_game():
@@ -23,30 +24,22 @@ def init_game2():
     currentState = None
     print(currentState)
     g = Learn()
-    #g.show_start_screen()
-    #while g.running:
-        #g.new()
-        #g.show_go_screen()
     __name__ == "__main__"
     background = thorpy.load_image("../pictures/Background1.png")
-    e_bckgr = thorpy.Background.make(image=background, elements=elements)
-    thorpy.store(e_bckgr)
-    m=thorpy.Menu(e_bckgr)
+    sticky_menu = thorpy.Background.make(image=background, elements=elements)
+    thorpy.store(sticky_menu)
+    m=thorpy.Menu(sticky_menu)
     m.play()
 
 def init_game3():
     currentState = None
     print(currentState)
-    g = Learn()
-    #g.show_start_screen()
-    #while g.running:
-        #g.new()
-        #g.show_go_screen()
+    g = Rules()
     __name__ == "__main__"
     background = thorpy.load_image("../pictures/Background1.png")
-    e_bckgr = thorpy.Background.make(image=background, elements=elements)
-    thorpy.store(e_bckgr)
-    m=thorpy.Menu(e_bckgr)
+    sticky_menu = thorpy.Background.make(image=background, elements=elements)
+    thorpy.store(sticky_menu)
+    m=thorpy.Menu(sticky_menu)
     m.play()
 
 if __name__ == "__main__":
