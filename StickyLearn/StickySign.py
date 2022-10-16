@@ -77,7 +77,7 @@ def order_points(pts):
 		# theorem, the point with the largest distance will be
 		# our bottom-right point
 		D = dist.cdist(tl[np.newaxis], rightMost, "euclidean")[0]
-		(br, tr) = rightMost[np.argsort(D)[::-1], :]
+		(br, tr) = rightMost[np.argsort(D)[::-1], :][:2]
  
 		# return the coordinates in top-left, top-right,
 		# bottom-right, and bottom-left order

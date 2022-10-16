@@ -4,8 +4,8 @@ from Settings import *
 class Rules:
     def __init__(self):
         screen = pg.display.set_mode((WIDTH, HEIGHT))
-        pg.display.set_caption('Practice Mode')
-        screen.fill(LIGHTPINK)
+        rules = pg.image.load('../pictures/RulesPage.png')
+        screen.blit(pg.transform.scale(rules, (WIDTH, HEIGHT)), [0, 0])
         pg.display.update()
         running = True
         while running:
@@ -15,11 +15,13 @@ class Rules:
                 if event.type == pg.KEYDOWN:
                     if event.key == pg.K_ESCAPE:
                         running = False
+                    if event.key == pg.K_ESCAPE:
+                        running = False
                         
 
     def show_start_screen(self):
-        screen = pg.display.set_mode((700, 700))
-        pg.display.set_caption('StickySign Rules')
-        screen.fill(LIGHTPINK)
+        screen = pg.display.set_mode((WIDTH, HEIGHT))
+        rules = pg.image.load('../pictures/RulesPage.png')
+        screen.blit(pg.transform.scale(rules, (WIDTH, HEIGHT)), [0, 0])
         pg.display.update()
         pass
