@@ -1,32 +1,26 @@
-![StickyAR](https://github.com/FischerMoseley/HackMIT_StickyNoteAR/blob/master/assets/gamelogos/Logo.png)
+![StickyAR](https://github.com/trobutlef/hackharvard-project/pictures/StickyLogo.png)
+# Inspiration + Impact
+This project was inspired by a team member’s sibling who underwent cancer treatment, which limited his ability to communicate. American Sign Language (ASL) enabled the family to connect despite extenuating circumstances. Sign language has the power of bringing together hearing, hard-of-hearing, and deaf individuals. The language barrier between ASL-speakers and non-ASL speakers can lead to misdiagnosis in a medical setting, improper incarceration, lack of attention during an emergency situation, and inability to make connections with others. With just the power of sticky notes and a device, learning possibilities are endless.
+# Business Validation
+According to the National Institute on Deafness and Other Communication Disorders, 13% of people aged 12 or older have hearing loss in both ears. But the Deaf and hard-of-hearing community are not the only ones who can learn ASL. In a survey conducted of college students, 90% desired to learn American Sign Language but felt intimidated about learning a new language. College students are the next generation of doctors, lawyers, technologists. They are our primary target demographic because they are most open to learning and are about to enter the workforce and independent life. In user interviews, people described learning a new language as “time-consuming,” “hard to retain without practice,” and “beautiful because it helps people communicate and form strong bonds.” This age group enjoys playing brain stimulating games like Wordle and Trivia. 
+# What StickySign Does (Differently)
+StickySign makes language stick, one sign at a time. Through gamification, learning ASL becomes more accessible and fun. Signers learn key terms and become energized to practice ASL outside their community. StickySign differentiates itself from education-giants Duolingo and Quizlet. Duolingo, responsible for 60% of the language learning app shares, does not offer sign language.  Quizlet, a leading study tool, does not offer unique, entertaining learning games; it is traditional with matching and flashcards. StickySign can be played anywhere. In a classroom -- yes. On your window  --  for sure. On someone’s back -- if you want. Where and however you want to set up your sticky notes, you can. Levels and playing environments are endless.
+# How We Built It
+Hack Harvard’s Control, Alt, Create theme inspired us to extend StickyAR, a winning project from HackMIT’19, and develop it from being a color-based game to making American Sign Language more accessible to learn. We altered and added to their algorithm to make it respond to questions. Using OpenCV’s Contour Recognition software, StickySign fits images of signs on sticky notes and recognizes hand shapes.
+# Challenges We Ran Into
+We ran into a few challenges (learning opportunities) which helped us grow as developers and spark new interests in technology. Our first challenge was learning the StickyAR code and ideating how to remake it with our use cases in mind. The other roadblock was getting the code and external hardware (projector + video camera) to work in tandem. 
+# Accomplishments We Are Proud Of
+We are proud of our teamwork and continuous encouragement, despite facing several challenges. Resiliency, hard work, comradery, and coffee carried us to the end. Being able to create an impactful webapp to make ASL more accessible is the biggest reward. It is heartwarming to know our project has the potential to break down communication barriers and empower others to feel connected to American Sign Language.
+# What We Learned 
+Before two weeks ago, none of us attended an in person hackathon; by the end of this event we were amazed by how our minds expanded from all the learning. Researching the psychology of gamification and how this strategy acts as an intrinsic motivator was exciting. We learned about the possibilities and limitations of OpenCV through trial and error, YouTube videos, and mentorship. Jaiden was thrilled to teach the group American Sign Language from her experience interacting both inside her studies and within the Deaf community; now we can fingerspell to each other. Completing this project gave us an appreciation for being scrappy and not afraid to try new things. 
+# What’s Next for StickySign
+StickySign was created with the intention of making American Sign Language more accessible. In future iterations, users can graduate from fingerspelling and learn signs for words. Additionally, with computer vision, the device can give the user feedback on their handshape by a machine-learning trained algorithm. We would conduct a proof-of-concept at State of New York University at Binghamton, which has a rich ASL community and need for ASL-speakers. After inputting this feedback and debugging, we foresee expanding StickySign within another State of New University and having the university system adopt our application, through annual subscriptions. 
+ 
+We have a vision of partnering with Post-It Note to donate supplies (sticky notes and devices) to communities that are under-resourced. This strategic partnership will not only help our application gain traction but also make it visible to those who may not have been able to learn American Sign Language. Further support and application visibility can come from American Sign Language speaking influencers like Nyle DiMarco and Marlee Matlin using their platform to raise awareness for StickySign.
+# Thank You
+We are grateful to our generous mentors, the StickAR team (Zach Rolfness, Tim Gutterman, Lucas Igel, Fischer Moseley) for their kindness and novel idea, HackHarvard for organizing this incredible hackathon, inspiring peers, and teammates. These past 36 hours have been transformative.
+* Tell us how your experience with MLH’s sponsor technology went.
+Give us some feedback about any of the MLH sponsored technology you interacted with at this hackathon. Make sure you mention what tech you're reviewing (e.g. Twilio, GitHub, DeSo etc.).
+GitHub allowed us to collaborate on our code with the comfort of our individual laptops. Its open-source capabilities enabled us to expand the StickyAR code. The version-control feature let our team go back to previous edits and debug when necessary.
 
-## Demo!
-![Recorded Demo](https://github.com/FischerMoseley/HackMIT_StickyNoteAR/blob/master/assets/gameplay.gif)
-
-## Awarded Best in Entertainment Category
-![Award Ceremony](https://github.com/FischerMoseley/HackMIT_StickyNoteAR/blob/master/assets/award.png)
-
-## Inspiration
-Virtually every classroom has a projector, whiteboard, and sticky notes. With OpenCV and Python being more accessible than ever, we wanted to create an augmented reality entertainment platform that any enthusiast could learn from and bring to their own place of learning. StickyAR is just that, with a super simple interface that can anyone can use to produce any tile-based Numpy game. Our first offering is StickyJump , a 2D platformer whose layout can be changed on the fly by placement of sticky notes. We want to demystify computer science in the classroom, and letting students come face to face with what's possible is a task we were happy to take on.
-
-## What it does
-StickyAR works by using OpenCV's Contour Recognition software to recognize the borders of a projector image and the position of human placed sticky notes. We then use a matrix transformation scheme to ensure that the positioning of the sticky notes align with the projector image so that our character can appear as if he is standing on top of the sticky notes. We then have code for a simple platformer that uses the sticky notes as the platforms our character runs, jumps, and interacts with!
-
-## How we built it
-We split our team of four into two sections, one half that works on developing the OpenCV/Data Transfer part of the project and the other half who work on the game side of the project. It was truly a team effort.
-
-## Challenges we ran into
-The biggest challenges we ran into were that a lot of our group members are not programmers by major. We also had a major disaster with Git that almost killed half of our project. Luckily we had some very gracious mentors come out and help us get things sorted out! We also first attempted to the game half of the project in unity which ended up being too much of a beast to handle.
-
-## Accomplishments that we're proud of
-That we got it done! It was pretty amazing to see the little square pop up on the screen for the first time on top of the spawning block. As we think more deeply about the project, we're also excited about how extensible the platform is for future games and types of computer vision features.
-
-## What we learned
-A whole ton about python, OpenCV, and how much we regret spending half our time working with Unity. Python's general inheritance structure came very much in handy, and its networking abilities were key for us when Unity was still on the table. Our decision to switch over completely to Python for both OpenCV and the game engine felt like a loss of a lot of our work at the time, but we're very happy with the end-product.
-
-## What's next for StickyAR
-StickyAR was designed to be as extensible as possible, so any future game that has colored tiles as elements can take advantage of the computer vision interface we produced. We've already thought through the next game we want to make - StickyJam. It will be a music creation app that sends a line across the screen and produces notes when it strikes the sticky notes, allowing the player to vary their rhythm by placement and color.
-
-Built With OpenCV, Pygame, and Python
-
-Made by Zach Rolfness, Tim Gutterman, Lucas Igel, Fischer Moseley in 24 hours for HackMIT 2019.
+Made by Chirag Malhotra, Tony Astuhuaman, Jaiden Price, and Melvin He for HackHarvard 2022.
