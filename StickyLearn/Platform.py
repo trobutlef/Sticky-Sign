@@ -13,6 +13,11 @@ def init_game():
         g.new()
         g.show_go_screen()
     __name__ = "__main__"
+    background = thorpy.load_image("../pictures/Background1.png")
+    e_bckgr = thorpy.Background.make(image=background, elements=elements)
+    thorpy.store(e_bckgr)
+    m=thorpy.Menu(e_bckgr)
+    m.play()
 
 def init_game2():
     currentState = None
@@ -23,7 +28,22 @@ def init_game2():
         #g.new()
         #g.show_go_screen()
     __name__ == "__main__"
-    background = thorpy.load_image("../pictures/Background.png")
+    background = thorpy.load_image("../pictures/Background1.png")
+    e_bckgr = thorpy.Background.make(image=background, elements=elements)
+    thorpy.store(e_bckgr)
+    m=thorpy.Menu(e_bckgr)
+    m.play()
+
+def init_game3():
+    currentState = None
+    print(currentState)
+    g = Learn()
+    #g.show_start_screen()
+    #while g.running:
+        #g.new()
+        #g.show_go_screen()
+    __name__ == "__main__"
+    background = thorpy.load_image("../pictures/Background1.png")
     e_bckgr = thorpy.Background.make(image=background, elements=elements)
     thorpy.store(e_bckgr)
     m=thorpy.Menu(e_bckgr)
@@ -38,24 +58,23 @@ if __name__ == "__main__":
     def calibrate():
         print("calibrating")
 
-    logo = thorpy.Image.make(thorpy.load_image("../pictures/StickyLogo.png"))
+    sticky_logo = thorpy.Image.make(thorpy.load_image("../pictures/StickyLogo.png"))
     sticky_jump_image = "../pictures/JumpSmall.png"
     sticky_jump_image_hover = "../pictures/Jump.png"
-    sticky_jam_image = "../pictures/LearnSmall.png"
-    sticky_jam_image_hover = "../pictures/Learn.png"
-    reset_image = "../pictures/Reset.png"
-    quit_image = "../pictures/RulesSmall.png"
-    quit_image_hover = "../pictures/Rules.png"
-    e_play = thorpy.make_image_button(sticky_jump_image,sticky_jump_image,sticky_jump_image_hover)
-    e_play.user_func = init_game
-    e_play_2 = thorpy.make_image_button(sticky_jam_image,sticky_jam_image,sticky_jam_image_hover)
-    e_play_2.user_func = init_game2
-    e_quit = thorpy.make_image_button(quit_image,quit_image,quit_image_hover)
-    e_quit.user_func = thorpy.functions.quit_menu_func
-    elements = [logo, e_play, e_play_2, e_quit]
-    background = thorpy.load_image("../pictures/Background.png")
-    e_bckgr = thorpy.Background.make(image=background, elements=elements)
-    thorpy.store(e_bckgr)
-    m=thorpy.Menu(e_bckgr)
+    sticky_learn_image = "../pictures/LearnSmall.png"
+    sticky_learn_image_hover = "../pictures/Learn.png"
+    sticky_rules_image = "../pictures/RulesSmall.png"
+    sticky_rules_image_hover = "../pictures/Rules.png"
+    jump_button = thorpy.make_image_button(sticky_jump_image,sticky_jump_image_hover,sticky_jump_image_hover)
+    jump_button.user_func = init_game
+    learn_button= thorpy.make_image_button(sticky_learn_image,sticky_learn_image_hover,sticky_learn_image_hover)
+    learn_button.user_func = init_game2
+    rules_button = thorpy.make_image_button(sticky_rules_image,sticky_rules_image_hover,sticky_rules_image_hover)
+    rules_button.user_func = init_game3
+    elements = [sticky_logo, jump_button, learn_button, rules_button]
+    background = thorpy.load_image("../pictures/Background1.png")
+    sticky_menu = thorpy.Background.make(image=background, elements=elements)
+    thorpy.store(sticky_menu)
+    m=thorpy.Menu(sticky_menu)
     m.play()
     app.quit()

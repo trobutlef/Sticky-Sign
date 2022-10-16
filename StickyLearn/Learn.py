@@ -1,8 +1,3 @@
-"""
-Flagship file for the StickyJump platformer game
-Proprietary content of StickyAR, 2019
-Brought to you by Luke Igel, Fischer Moseley, Tim Gutterman, and Zach Rolfness
-"""
 import pygame as pg
 from Settings import *
 import subprocess
